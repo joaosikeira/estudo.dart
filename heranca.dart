@@ -1,11 +1,6 @@
-class Animal{
+class Animal {
   late String nome;
   late double peso;
-}
-
-class Cachorro extends Animal  {
-  
-  late int fofura;
 
   void comer() {
     print("$nome comeu!");
@@ -14,6 +9,10 @@ class Cachorro extends Animal  {
   void fazerSom() {
     print("$nome fez algum som!");
   }
+}
+
+class Cachorro extends Animal {
+  late int fofura;
 
   void brincar() {
     fofura += 10;
@@ -21,16 +20,7 @@ class Cachorro extends Animal  {
   }
 }
 
-class Gato extends Animal{
- 
-  void comer() {
-    print("$nome comeu!");
-  }
-
-  void fazerSom() {
-    print("$nome fez algum som!");
-  }
-
+class Gato extends Animal {
   bool estaAmigavel() {
     return true;
   }
