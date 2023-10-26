@@ -19,8 +19,11 @@ void main() {
 
   Pessoa pessoa2 = Pessoa("Bea", 26, 1.65);
 
-  print('Nome: ${pessoa1.nome} \nIdade: ${pessoa1.idade} \nAltura: ${pessoa1.altura}' );
+  print(
+      'Nome: ${pessoa1.nome} \nIdade: ${pessoa1.idade} \nAltura: ${pessoa1.altura} ');
+        pessoa1.dormir();
 
-  print('\nNome: ${pessoa2.nome} \nIdade: ${pessoa2.idade} \nAltura: ${pessoa2.altura} ' );
-
+  print(
+      '\nNome: ${pessoa2.nome} \nIdade: ${pessoa2.idade} \nAltura: ${pessoa2.altura} ');
+        pessoa2.dormir();
 }
